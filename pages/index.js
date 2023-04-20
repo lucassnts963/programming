@@ -1,22 +1,35 @@
+import { Header } from "../components/Header";
+
 function Home() {
   return (
-    <main>
-      <h1>Programming.PA</h1>
-      <p>Olá, me chamo Lucas Santos, sou Engenheiro de Produção de formação e desenvolvedor por paixão. Estou criando esse espaço para publicar um pouco da minha experiência e aprendizado na minha jornada na busca de uma vaga no mercado de trabalho dev</p>
-      <p>Estudo programação desde de 2014, e por influência de terceiros e por falta de maturidade para tomar uma decisão mais coerente as minhas reais aptidões, acabei ingressando na faculdade de engenharia de produção, área fantástica que amo demais, porém não no mesmos nível que amo os códigos.</p>
-      <p>Após, inúmeros acontecimentos na vida pessoal e profissional decidir no final do ano de 2022 seguir na busca por uma vaga de desenvolvedor, confesso que não tem sido fácil por vários motivos, porém uma coisa e certa tenho bastante conhecimento porém está tudo uma bagunça. Levando isso em consideração, estou organizando meu conhecimento e estou criando espaços na internet para divulgar esses conhecimento. Assim, esse será um espaço onde centralizarei as informações garimpadas pela internet por mim.</p>
-      <p>Convido a você a favoritar esse site, que muitas coisas interessantes vão surgir por aqui. Valeu!</p>
+    <>
+      <Header/>
+      <main className="p-2 max-w-3xl block m-auto">
+        <img className="rounded-full w-52 block mx-auto mb-4" src="https://github.com/lucassnts963.png"/>
+        <h2 className="text-lg text-center">Olá, eu sou <strong className="text-red-500">Lucas Santos</strong></h2>
+        <p className="text-center text-sm text-zinc-500 mb-4">
+          Apaixonado por códigos.
+        </p>
+        <p className="text-justify mb-4">
+          <i>
+          "O objetivo desse espaço é registrar os conhecimentos adquiridos na minha jornada em busca de uma vaga de desenvolvedor no mercado de trabalho, na esperança de deixar minha contribuição para outras pessoas que buscam o mesmo conhecimento."
+          </i>
+        </p>
+        
+        <p className="text-sm text-red-500 text-center mb-4">
+          Convido a você favoritar esse site, que muitas coisas interessantes
+          vão surgir por aqui. Valeu!
+        </p>
 
-      <ul>
-        <li>
-          <a href="https://github.com/lucassnts963">GitHub</a>
-        </li>
-        <li>
-          <a href="https://www.linkedin.com/in/lucas-santos-07446190/">LinkedIn</a>
-        </li>
-      </ul>
-    </main>
-  )
+        <h2 className="text-2xl font-bold text-center text-red-500 mb-8">Projetos</h2>
+
+        <a className="bg-red-500 p-4 rounded-lg block mx-auto max-w-xs text-center font-bold hover:bg-red-600 mb-4" href="https://github.com/lucassnts963/telegram-chatgpt-integration" target="_blank">Integração do Telegram com ChatGPT</a>
+
+        <a className="bg-red-500 p-4 rounded-lg block mx-auto max-w-xs text-center font-bold hover:bg-red-600 mb-4" href="https://github.com/lucassnts963/todo" target="_blank">App de TODO</a>
+        
+      </main>
+    </>
+  );
 }
 
-export default Home
+export default Home;
