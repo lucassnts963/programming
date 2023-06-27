@@ -1,4 +1,4 @@
-import { Header } from "../components/Header";
+import { Header } from "../../components/Header";
 
 function Home() {
   return (
@@ -15,7 +15,7 @@ function Home() {
           "O objetivo desse espaço é registrar os conhecimentos adquiridos na minha jornada em busca de uma vaga de desenvolvedor no mercado de trabalho, na esperança de deixar minha contribuição para outras pessoas que buscam o mesmo conhecimento."
           </i>
         </p>
-        
+
         <p className="text-sm text-red-500 text-center mb-4">
           Convido a você favoritar esse site, que muitas coisas interessantes
           vão surgir por aqui. Valeu!
@@ -26,7 +26,7 @@ function Home() {
         <a className="bg-red-500 p-4 rounded-lg block mx-auto max-w-xs text-center font-bold hover:bg-red-600 mb-4" href="https://github.com/lucassnts963/telegram-chatgpt-integration" target="_blank">Integração do Telegram com ChatGPT</a>
 
         <a className="bg-red-500 p-4 rounded-lg block mx-auto max-w-xs text-center font-bold hover:bg-red-600 mb-4" href="https://github.com/lucassnts963/todo" target="_blank">App de TODO</a>
-        
+
       </main>
     </>
   );
